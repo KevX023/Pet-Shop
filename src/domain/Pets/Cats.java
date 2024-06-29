@@ -37,5 +37,17 @@ public class Cats extends Pets {
     public void setPedigri(boolean pedigri) {
         this.pedigri = pedigri;
     }
-    
+
+    @Override
+    public double price(){
+        if (getMonths() <= 24 && isPedigri() == false) {
+            return 1000 / getMonths();
+        } else if (getMonths() <= 24 && isPedigri() == true) {
+            return 2 * (1000 / getMonths());
+        } else if (getMonths() > 24 && isPedigri() == true) {
+            return 70.00;
+        } else {
+            return 35.00;
+        }
+    }
 }

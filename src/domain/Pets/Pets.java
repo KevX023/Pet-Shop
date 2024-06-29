@@ -1,10 +1,11 @@
 package domain.Pets;
 
-public class Pets {
+public abstract class Pets {
     protected int months;
     protected String name;
     protected String color;
     protected String country;
+    
     public Pets(int months, String name, String color, String country) {
         this.months = months;
         this.name = name;
@@ -35,9 +36,12 @@ public class Pets {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public abstract double price();
+
     @Override
     public String toString() {
-        return "Pets [months=" + months + ", name=" + name + ", color=" + color + ", country=" + country + "]";
+        return "Pets [months=" + months + ", name=" + name + ", color=" + color + ", country=" + country + "tipe=" + "]";
     }
 
     
