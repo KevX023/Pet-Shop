@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import domain.Pets.Cats;
 import domain.Pets.Dogs;
 
-public class ShopRepositoryimport {
+public class ShopRepository {
     private ArrayList<Dogs> listdDogs = new ArrayList<>();
     private ArrayList<Cats> listCats = new ArrayList<>();
 
