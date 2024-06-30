@@ -16,7 +16,7 @@ public class Main {
         Cats Albert = new Cats(30, "Albert", "Negro", "Japon", "Rojos", Gender.Macho, true);
         Dogs Aeogon = new Dogs(40, "Aegon", "Blanco", "Poniente", Breed.Bulldog);
         Dogs Valeryum = new Dogs(12, "Valerium", "Rojo", "Valiria", Breed.Dalmata);
-        Dogs Tyriom = new Dogs(5, "Tyriom", "Verde", "AHi", Breed.chowchow);
+        Dogs Tyriom = new Dogs(5, "Tyriom", "Rojo", "AHi", Breed.chowchow);
 
         repository.addCat(Albert);
         repository.addCat(Lole);
@@ -26,6 +26,9 @@ public class Main {
 
 
         shopService.printPetByName("Lole");
+        shopService.printOldestPet();
+        shopService.findLeastCommonColorAmongDogs();
+        shopService.printPetsOrderedByCountry();
     }
 
     
