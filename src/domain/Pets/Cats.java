@@ -50,4 +50,12 @@ public class Cats extends Pets {
             return 35.00;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Cats [months=" + months + ", eyecolor=" + eyecolor + ", name=" + name + ", gender=" + gender
+                + ", color=" + color + ", pedigri=" + pedigri + ", country=" + country + "]";
+    }
+
+    
 }

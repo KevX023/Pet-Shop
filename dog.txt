@@ -1,0 +1,3 @@
+Dogs [months=40, breed=Bulldog, name=Aegon, color=Blanco, country=Poniente]
+Dogs [months=12, breed=Dalmata, name=Valerium, color=Rojo, country=Valiria]
+Dogs [months=5, breed=chowchow, name=Tyriom, color=Rojo, country=AHi]

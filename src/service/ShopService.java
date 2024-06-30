@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
-
 import domain.Pets.Cats;
 import domain.Pets.Dogs;
 import repository.ShopRepository;
@@ -106,7 +105,7 @@ public class ShopService {
         }
     }
 
-        public void printPetsOrderedByCountry() {
+        public void petsOrderedByCountry() {
         // Combine the dogs and cats into a single list
         List<Object> allPets = new ArrayList<>();
         allPets.addAll(repository.getDogs());
@@ -127,12 +126,16 @@ public class ShopService {
         for (Object pet : allPets) {
             if (pet instanceof Dogs) {
                 Dogs dog = (Dogs) pet;
+                System.out.println("- Name: " + dog.getName() + ", Age: " + dog.getMonths() + ", Breed: " + dog.getBreed() + ", Price: $" + dog.price() + ", Country: " + dog.getCountry());
+
 
             } else if (pet instanceof Cats) {
                 Cats cat = (Cats) pet;
+                System.out.println("- Name: " + cat.getName() + ", Age: " + cat.getMonths() + ", Pedrigi: " + cat.isPedigri() + ", Price: $" + cat.price() + ", Country: " + cat.getCountry());
+
             }
         }
-    }
+    }   
 }
 
 

@@ -1,0 +1,2 @@
+Cats [months=30, eyecolor=Rojos, name=Albert, gender=Macho, color=Negro, pedigri=true, country=Japon]
+Cats [months=10, eyecolor=Rojos, name=Kelvin, gender=Macho, color=Negro, pedigri=true, country=Japon]
